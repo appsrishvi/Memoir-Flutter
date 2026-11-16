@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memoir</title>
+    <meta name="description" content="Memoir, a private mood-reactive journal. App guide and privacy policy." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --paper: #FDFBF7;
+        --surface: #FFFFFF;
+        --ink: #1F2937;
+        --muted: #6B7280;
+        --line: #E7DFD2;
+        --plum: #5B21B6;
+        --plum-soft: #EDE9FE;
+        --shadow: 0 12px 34px rgba(31, 41, 55, 0.10);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #17151D;
+          --surface: #241F31;
+          --ink: #F5F0E8;
+          --muted: #C7BFD4;
+          --line: #3B3350;
+          --plum-soft: #3A2B66;
+          --shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 40px 16px;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Public Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+      }
+      main { width: 100%; max-width: 640px; text-align: center; }
+      .mark {
+        width: 52px; height: 52px; margin: 0 auto 18px;
+        display: grid; place-items: center;
+        border-radius: 999px; background: var(--plum); color: #fff;
+      }
+      h1 {
+        margin: 0;
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 600;
+        font-size: clamp(2.4rem, 8vw, 3.4rem);
+        letter-spacing: -0.03em;
+        line-height: 1;
+      }
+      .lede { margin: 14px auto 32px; max-width: 46ch; color: var(--muted); line-height: 1.7; }
+      .links { display: grid; gap: 14px; grid-template-columns: 1fr; text-align: left; }
+      @media (min-width: 560px) { .links { grid-template-columns: 1fr 1fr; } }
+      a.card {
+        display: block; padding: 22px;
+        border: 1px solid var(--line); border-radius: 22px;
+        background: var(--surface); box-shadow: var(--shadow);
+        color: inherit; text-decoration: none;
+        transition: transform .15s ease, border-color .15s ease;
+      }
+      a.card:hover, a.card:focus-visible { transform: translateY(-2px); border-color: var(--plum); }
+      .kicker { font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--plum); }
+      @media (prefers-color-scheme: dark) { .kicker { color: #C4B5FD; } }
+      .card h2 { margin: 8px 0 6px; font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 22px; }
+      .card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+      footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+      </div>
+      <h1>Memoir</h1>
+      <p class="lede">A private, mood-reactive journal and photo diary. Your words stay yours.</p>
+      <div class="links">
+        <a class="card" href="./guide/">
+          <span class="kicker">Guide</span>
+          <h2>App Guide</h2>
+          <p>How to use Memoir and how it works.</p>
+        </a>
+        <a class="card" href="./privacy-policy/">
+          <span class="kicker">Legal</span>
+          <h2>Privacy Policy</h2>
+          <p>What Memoir collects, why, and the control you keep.</p>
+        </a>
+      </div>
+      <footer>© 2026 Memoir</footer>
+    </main>
+  </body>
+</html>
