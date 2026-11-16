@@ -4,9 +4,9 @@ Static site for the Memoir app, hosted on GitHub Pages.
 
 | Page | URL |
 | --- | --- |
-| Home | https://vaibhav-rishvi.github.io/Memoir-Flutter/ |
-| App guide | https://vaibhav-rishvi.github.io/Memoir-Flutter/guide/ |
-| Privacy policy | https://vaibhav-rishvi.github.io/Memoir-Flutter/privacy-policy/ |
+| Home | https://appsrishvi.github.io/Memoir-Flutter/ |
+| App guide | https://appsrishvi.github.io/Memoir-Flutter/guide/ |
+| Privacy policy | https://appsrishvi.github.io/Memoir-Flutter/privacy-policy/ |
 
 ## Layout
 
