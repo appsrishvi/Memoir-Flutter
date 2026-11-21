@@ -232,7 +232,7 @@ export default function App() {
             <ul className="space-y-4">
               <Bullet title="Data Retention">Your journal entries and media remain stored in your private cloud vault for as long as your account remains active.</Bullet>
               <Bullet title="Content Deletion">You may edit or permanently delete individual journal entries at any time directly within the application interface.</Bullet>
-              <Bullet title="Account & Full Data Deletion">You have the right to request full account and data erasure. You can permanently delete your account and all associated journal data instantly by navigating inside the app to: Profile → Preferences → Privacy & Security → Delete Account & Data. Alternatively, you may submit a manual deletion request by emailing <a className="mail-link rounded px-1 font-semibold text-[var(--plum)] underline decoration-[var(--plum)]/40 underline-offset-4" href="mailto:privacy@memoir.app">privacy@memoir.app</a>. Upon account deletion, all account records, journal entries, and attached files are permanently purged from our active databases and backup systems.</Bullet>
+              <Bullet title="Account & Full Data Deletion">You have the right to request full account and data erasure. You can permanently delete your account and all associated journal data instantly by navigating inside the app to: Profile → Preferences → Privacy & Security → Delete Account & Data. Alternatively, you may submit a manual deletion request by emailing <a className="mail-link rounded px-1 font-semibold text-[var(--plum)] underline decoration-[var(--plum)]/40 underline-offset-4" href="mailto:privacy@momently.app">privacy@momently.app</a>. Upon account deletion, all account records, journal entries, and attached files are permanently purged from our active databases and backup systems.</Bullet>
             </ul>
           </section>
 
@@ -254,9 +254,9 @@ export default function App() {
             <p className="mb-6 leading-[1.8] text-[var(--ink-soft)]">If you have questions, feedback, or requests regarding this Privacy Policy or your personal data, please contact us at:</p>
             <div className="grid gap-3 sm:grid-cols-3">
               {[
-                { label: "Privacy Inquiries & Data Deletion", email: "privacy@memoir.app" },
-                { label: "General Technical Support", email: "support@memoir.app" },
-                { label: "Legal & Regulatory Inquiries", email: "legal@memoir.app" },
+                { label: "Privacy Inquiries & Data Deletion", email: "privacy@momently.app" },
+                { label: "General Technical Support", email: "support@momently.app" },
+                { label: "Legal & Regulatory Inquiries", email: "legal@momently.app" },
               ].map((c) => (
                 <a key={c.email} href={`mailto:${c.email}`} className="mail-link group rounded-2xl border border-[var(--line)] bg-[var(--paper)] p-4">
                   <span className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-[var(--plum-soft)] text-[var(--plum)]"><Mail className="h-4 w-4" /></span>

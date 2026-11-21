@@ -208,7 +208,7 @@ export default function App() {
             <Bullet title="Email & Password Login:" >Enter your registered email address and password on the Sign In screen, then tap Sign In.</Bullet>
             <Bullet title="Google Sign-In:" >Tap Continue with Google for one-tap OAuth authentication. First-time users are guided through a lightweight profile set-up (full name, birth date, occupation, and bio).</Bullet>
             <Bullet title="New Account Registration:" >Tap Sign Up on the authentication landing page, enter your credentials, complete your profile details, and establish your journal vault.</Bullet>
-            <Bullet title="Demo Reviewer Mode (No Verification Required):" >Tap Use Demo Account (or enter demo@memoir.app / Demo@1234) and tap Sign In to immediately explore pre-populated journal data without requiring email verification.</Bullet>
+            <Bullet title="Demo Reviewer Mode (No Verification Required):" >Tap Use Demo Account (or enter demo@momently.app / Demo@1234) and tap Sign In to immediately explore pre-populated journal data without requiring email verification.</Bullet>
             <Bullet title="Password Recovery:" >If you forget your password, tap Forgot Password? on the sign-in screen to receive an automated reset link via email.</Bullet>
           </ul></Card>
           <p className="mt-3 rounded-2xl border border-dashed border-[var(--line)] bg-[var(--paper-2)] px-4 py-3 text-sm leading-6 text-[var(--muted)]"><strong className="text-[var(--ink)]">Demo tip:</strong> Demo Reviewer Mode is the fastest way to evaluate Momently — no verification step stands between you and the journal.</p>
