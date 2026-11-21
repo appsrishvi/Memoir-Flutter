@@ -89,10 +89,10 @@ export default function App() {
       <header data-safe-area-sticky-top className="sticky z-30 px-3 pt-3 sm:px-4" style={{ top: "var(--safe-area-inset-top)" }}>
         <div className="mx-auto max-w-[1080px]">
           <div className="flex min-h-[68px] flex-nowrap items-center justify-between gap-2 overflow-hidden rounded-[999px] border border-[var(--line)] bg-[var(--surface)]/90 px-2 py-2 shadow-[0_10px_30px_rgba(31,41,55,0.12)] backdrop-blur-md sm:px-3">
-            <a href="#top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex shrink-0 flex-nowrap items-center gap-2.5 whitespace-nowrap" aria-label="Memoir — back to top">
+            <a href="#top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex shrink-0 flex-nowrap items-center gap-2.5 whitespace-nowrap" aria-label="Momently — back to top">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--plum)] text-white"><BookOpenText className="h-5 w-5" /></span>
               <span className="leading-none">
-                <span className="font-serif-display block text-[22px] font-semibold tracking-tight">Memoir</span>
+                <span className="font-serif-display block text-[22px] font-semibold tracking-tight">Momently</span>
                 <span className="mt-0.5 block text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--muted)]">Privacy Policy</span>
               </span>
             </a>
@@ -112,11 +112,11 @@ export default function App() {
           <div className="mx-auto mb-5 flex w-fit items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--sage)]">
             <ShieldCheck className="h-4 w-4" /> Your words stay yours
           </div>
-          <h1 className="font-serif-display mx-auto max-w-[720px] text-[clamp(2.4rem,8vw,4.2rem)] font-semibold leading-[0.98] tracking-[-0.035em]">Privacy Policy<br /><span className="italic text-[var(--plum)]">— Memoir</span></h1>
+          <h1 className="font-serif-display mx-auto max-w-[720px] text-[clamp(2.4rem,8vw,4.2rem)] font-semibold leading-[0.98] tracking-[-0.035em]">Privacy Policy<br /><span className="italic text-[var(--plum)]">— Momently</span></h1>
           <p className="mx-auto mt-5 max-w-[620px] text-[15px] font-medium leading-relaxed text-[var(--ink-soft)] sm:text-base">
             Effective Date: November 13, 2026 <span className="mx-1 text-[var(--muted)]">|</span> Last Updated: November 13, 2026
           </p>
-          <p className="mx-auto mt-4 max-w-[620px] text-[15px] leading-relaxed text-[var(--muted)]">A clear account of what Memoir collects, why it is needed, and the control you keep over your private journal.</p>
+          <p className="mx-auto mt-4 max-w-[620px] text-[15px] leading-relaxed text-[var(--muted)]">A clear account of what Momently collects, why it is needed, and the control you keep over your private journal.</p>
         </section>
 
         {/* Table of contents */}
@@ -143,15 +143,15 @@ export default function App() {
           <section id="introduction" className="policy-card scroll-mt-24 p-5 sm:p-8">
             <SectionHeading num="01" title="Introduction & Scope" />
             <div className="space-y-4 leading-[1.8] text-[var(--ink-soft)]">
-              <p>Memoir (“we,” “our,” or “us”) deeply respects your personal privacy and is committed to protecting your private reflections, personal journal entries, and account security. This Privacy Policy outlines the types of information we collect, how it is processed and secured, and the choices you have regarding your personal data.</p>
-              <p>This policy applies to the Memoir mobile application (available on Android and iOS platforms) and its associated cloud infrastructure and services. By using Memoir, you agree to the collection and use of information in accordance with this policy.</p>
+              <p>Momently (“we,” “our,” or “us”) deeply respects your personal privacy and is committed to protecting your private reflections, personal journal entries, and account security. This Privacy Policy outlines the types of information we collect, how it is processed and secured, and the choices you have regarding your personal data.</p>
+              <p>This policy applies to the Momently mobile application (available on Android and iOS platforms) and its associated cloud infrastructure and services. By using Momently, you agree to the collection and use of information in accordance with this policy.</p>
             </div>
           </section>
 
           {/* 2 */}
           <section id="collect" className="policy-card scroll-mt-24 p-5 sm:p-8">
             <SectionHeading num="02" title="Information We Collect" />
-            <p className="mb-5 leading-[1.8] text-[var(--ink-soft)]">We collect information to provide, personalize, and secure your journaling experience. The table below details the categories of data processed by Memoir:</p>
+            <p className="mb-5 leading-[1.8] text-[var(--ink-soft)]">We collect information to provide, personalize, and secure your journaling experience. The table below details the categories of data processed by Momently:</p>
             <div className="table-wrap rounded-2xl border border-[var(--line)]">
               <table className="policy-table">
                 <thead><tr><th scope="col">Data Category</th><th scope="col">Specific Data Items</th><th scope="col">Purpose of Collection</th><th scope="col">Storage Location</th></tr></thead>
@@ -172,7 +172,7 @@ export default function App() {
           {/* 3 */}
           <section id="use" className="policy-card scroll-mt-24 p-5 sm:p-8">
             <SectionHeading num="03" title="How We Use Your Information" />
-            <p className="mb-5 leading-[1.8] text-[var(--ink-soft)]">We process your data strictly to deliver and improve the Memoir experience. Specifically, we use your information to:</p>
+            <p className="mb-5 leading-[1.8] text-[var(--ink-soft)]">We process your data strictly to deliver and improve the Momently experience. Specifically, we use your information to:</p>
             <ul className="space-y-4">
               <Bullet title="Account Authentication & Sync">Authenticate your identity and securely synchronize your private journal vault across your connected devices.</Bullet>
               <Bullet title="Personalized Features & Analytics">Render customized mood-reactive themes, custom story layouts, interactive timelines, calendar views, and personal reflection statistics (including word counts, mood trends, and category breakdowns).</Bullet>
@@ -195,7 +195,7 @@ export default function App() {
           {/* 4 */}
           <section id="permissions" className="policy-card scroll-mt-24 p-5 sm:p-8">
             <SectionHeading num="04" title="Device Permissions We Request" />
-            <p className="mb-5 leading-[1.8] text-[var(--ink-soft)]">To provide optional features, Memoir requests access to specific device capabilities. You can grant or revoke these permissions at any time through your operating system settings.</p>
+            <p className="mb-5 leading-[1.8] text-[var(--ink-soft)]">To provide optional features, Momently requests access to specific device capabilities. You can grant or revoke these permissions at any time through your operating system settings.</p>
             <ul className="space-y-4">
               <Bullet title="Photos / Media / Gallery & Camera">Required only when you explicitly select a photo to attach to a memory or set as your profile picture. Images are compressed locally on your device prior to encrypted synchronization.</Bullet>
               <Bullet title="Notifications">Used strictly to deliver scheduled daily journaling reminders, weekly reflection digests, and milestone alerts configured in your in-app Preferences.</Bullet>
@@ -207,7 +207,7 @@ export default function App() {
           {/* 5 */}
           <section id="third-party" className="policy-card scroll-mt-24 p-5 sm:p-8">
             <SectionHeading num="05" title="Third-Party Services & Infrastructure" />
-            <p className="mb-5 leading-[1.8] text-[var(--ink-soft)]">Memoir utilizes trusted cloud infrastructure providers to host and secure application data. All third-party services comply with strict data protection standards:</p>
+            <p className="mb-5 leading-[1.8] text-[var(--ink-soft)]">Momently utilizes trusted cloud infrastructure providers to host and secure application data. All third-party services comply with strict data protection standards:</p>
             <ul className="space-y-4">
               <Bullet title="Firebase Authentication (Google LLC)">Handles secure identity management, including email/password sign-in, Google OAuth integration, and password recovery communications.</Bullet>
               <Bullet title="Cloud Firestore (Google LLC)">Provides cloud database storage for user profiles and journal entries. All data is encrypted in transit and at rest, governed by granular security rules isolating data to individual accounts (users/{`{uid}`}/memories).</Bullet>
@@ -220,7 +220,7 @@ export default function App() {
             <SectionHeading num="06" title="Data Security & User Isolation" />
             <p className="mb-5 leading-[1.8] text-[var(--ink-soft)]">We implement rigorous technical and organizational security measures to protect your data:</p>
             <ul className="space-y-4">
-              <Bullet title="Encryption in Transit & at Rest">All communication between the Memoir app and cloud servers occurs via secure, encrypted HTTPS/TLS connections. Data stored within Cloud Firestore is encrypted at rest using industry-standard AES-256 encryption.</Bullet>
+              <Bullet title="Encryption in Transit & at Rest">All communication between the Momently app and cloud servers occurs via secure, encrypted HTTPS/TLS connections. Data stored within Cloud Firestore is encrypted at rest using industry-standard AES-256 encryption.</Bullet>
               <Bullet title="Strict User Data Isolation">Database security is enforced using server-side Cloud Firestore Security Rules. Read and write access is strictly limited to the authenticated account owner corresponding to that unique User ID (request.auth.uid == userId). No other user can access or view your private entries.</Bullet>
             </ul>
           </section>
@@ -239,7 +239,7 @@ export default function App() {
           {/* 8 */}
           <section id="children" className="policy-card scroll-mt-24 p-5 sm:p-8">
             <SectionHeading num="08" title="Children's Privacy" />
-            <p className="leading-[1.8] text-[var(--ink-soft)]">Memoir is not directed toward, nor intended for use by, children under the age of 13 (or the relevant legal age of digital consent in your jurisdiction). We do not knowingly collect or solicit personal information from children. If we become aware that a child under 13 has provided us with personal data, we will immediately delete such information from our servers.</p>
+            <p className="leading-[1.8] text-[var(--ink-soft)]">Momently is not directed toward, nor intended for use by, children under the age of 13 (or the relevant legal age of digital consent in your jurisdiction). We do not knowingly collect or solicit personal information from children. If we become aware that a child under 13 has provided us with personal data, we will immediately delete such information from our servers.</p>
           </section>
 
           {/* 9 */}
@@ -266,14 +266,14 @@ export default function App() {
               ))}
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-2 rounded-xl bg-[var(--sage-soft)]/70 px-4 py-3 text-[13px] leading-relaxed text-[var(--ink-soft)]">
-              <Check className="h-4 w-4 shrink-0 text-[var(--sage)]" /> Privacy and deletion requests go directly to the Memoir team — no form or account action is required to reach us by email.
+              <Check className="h-4 w-4 shrink-0 text-[var(--sage)]" /> Privacy and deletion requests go directly to the Momently team — no form or account action is required to reach us by email.
             </div>
           </section>
         </div>
 
         <footer className="mt-10 border-t border-[var(--line)] pt-7 text-center">
-          <p className="font-serif-display text-[20px] font-semibold">Memoir</p>
-          <p className="mt-2 text-sm text-[var(--muted)]">© 2026 Memoir. Your words stay yours.</p>
+          <p className="font-serif-display text-[20px] font-semibold">Momently</p>
+          <p className="mt-2 text-sm text-[var(--muted)]">© 2026 Momently. Your words stay yours.</p>
           <p className="mt-1 text-xs text-[var(--muted)]">Effective Date: November 13, 2026 | Last Updated: November 13, 2026</p>
         </footer>
       </main>

@@ -1,12 +1,12 @@
-# Memoir website
+# Momently website
 
-Static site for the Memoir app, hosted on GitHub Pages.
+Static site for the Momently app, hosted on GitHub Pages.
 
 | Page | URL |
 | --- | --- |
-| Home | https://appsrishvi.github.io/Memoir-Flutter/ |
-| App guide | https://appsrishvi.github.io/Memoir-Flutter/guide/ |
-| Privacy policy | https://appsrishvi.github.io/Memoir-Flutter/privacy-policy/ |
+| Home | https://momently.rishvi.app/ |
+| App guide | https://momently.rishvi.app/guide/ |
+| Privacy policy | https://momently.rishvi.app/privacy-policy/ |
 
 ## Layout
 

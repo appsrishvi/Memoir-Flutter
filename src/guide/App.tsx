@@ -141,9 +141,9 @@ export default function App() {
       {/* Sticky floating capsule navigation */}
       <header data-safe-area-sticky-top style={{ top: "var(--safe-area-inset-top)" }} className="sticky z-40 px-3 pt-3 sm:px-5 sm:pt-4">
         <nav aria-label="Guide navigation" className="mx-auto flex max-w-[1080px] items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] py-2 pl-3 pr-2 shadow-[var(--shadow)]">
-          <a href="#top" className="flex flex-none items-center gap-2 rounded-full py-1 pr-2" aria-label="Memoir guide home">
+          <a href="#top" className="flex flex-none items-center gap-2 rounded-full py-1 pr-2" aria-label="Momently guide home">
             <span className="grid h-8 w-8 place-items-center rounded-full bg-[#5B21B6] text-white"><BookOpen size={17} /></span>
-            <span className="font-serif-display text-[19px] font-semibold leading-none">Memoir</span>
+            <span className="font-serif-display text-[19px] font-semibold leading-none">Momently</span>
           </a>
           <div className="nav-scroll flex flex-1 flex-nowrap items-center gap-1 overflow-x-auto whitespace-nowrap py-1">
             {NAV.map((item) => (
@@ -158,7 +158,7 @@ export default function App() {
         {/* Hero */}
         <section className="pt-9 text-center sm:pt-12">
           <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 text-xs font-semibold text-[var(--muted)]"><Sparkles size={14} className="text-[#5B21B6]" /> A private journal · A personal cloud vault</div>
-          <h1 className="font-serif-display mx-auto mt-5 max-w-[820px] text-[clamp(2.35rem,7vw,4.25rem)] font-semibold leading-[0.98] tracking-tight">Memoir App Guide: How to Use &amp; How It Works</h1>
+          <h1 className="font-serif-display mx-auto mt-5 max-w-[820px] text-[clamp(2.35rem,7vw,4.25rem)] font-semibold leading-[0.98] tracking-tight">Momently App Guide: How to Use &amp; How It Works</h1>
           <p className="mx-auto mt-5 max-w-[680px] text-base leading-7 text-[var(--muted)] sm:text-lg sm:leading-8">A calm companion for daily micro-journaling — expressive pages, mood-aware colour, and a private archive that grows with you.</p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
             <a href="#getting-started" className="rounded-full bg-[#5B21B6] px-5 py-3 text-sm font-semibold text-white shadow-sm">Start with Sign In</a>
@@ -174,7 +174,7 @@ export default function App() {
         {/* Overview */}
         <section id="overview" className="scroll-mt-28 pt-14">
           <SectionHead kicker="Overview" title="A journal that listens to the day." />
-          <Card><p className="text-[16px] leading-8">Memoir is a private, mood-reactive digital journal and photo diary built natively with Flutter and Firebase. Designed to serve as a personal cloud vault, Memoir transforms daily micro-journaling into an immersive aesthetic experience.</p>
+          <Card><p className="text-[16px] leading-8">Momently is a private, mood-reactive digital journal and photo diary built natively with Flutter and Firebase. Designed to serve as a personal cloud vault, Momently transforms daily micro-journaling into an immersive aesthetic experience.</p>
             <div className="mt-5 flex flex-wrap gap-2">
               {["Private by design", "Mood-reactive", "Photo diary", "Cloud vault"].map((t) => <span key={t} className="rounded-full bg-[var(--plum-soft)] px-3 py-1.5 text-xs font-semibold text-[#5B21B6]">{t}</span>)}
             </div>
@@ -183,7 +183,7 @@ export default function App() {
 
         {/* Value */}
         <section id="value" className="scroll-mt-28 pt-14">
-          <SectionHead kicker="Core Value Proposition" title="Five reasons Memoir feels different." />
+          <SectionHead kicker="Core Value Proposition" title="Five reasons Momently feels different." />
           <div className="grid gap-4 sm:grid-cols-2">
             {VALUES.map((v, i) => (
               <article key={v.title} className={`rounded-[22px] border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[var(--shadow)] ${i === 4 ? "sm:col-span-2" : ""}`}>
@@ -197,13 +197,13 @@ export default function App() {
         {/* PART 1 */}
         <div className="mt-16 overflow-hidden rounded-[26px] bg-[#1F2937] px-6 py-8 text-center text-white sm:py-10">
           <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#C4B5FD]">Part 1</p>
-          <h2 className="font-serif-display mt-2 text-[clamp(1.9rem,5vw,2.8rem)] font-semibold leading-tight">How to Use Memoir</h2>
+          <h2 className="font-serif-display mt-2 text-[clamp(1.9rem,5vw,2.8rem)] font-semibold leading-tight">How to Use Momently</h2>
           <p className="mx-auto mt-2 max-w-[560px] text-sm leading-6 text-[#D1D5DB]">The everyday guide — from your first sign-in to reading, editing, and reflecting on your memories.</p>
         </div>
 
         {/* 2.1 */}
         <section id="getting-started" className="scroll-mt-28 pt-14">
-          <SectionHead kicker="2.1 · Getting Started & Signing In" title="Choose how you want to arrive." intro="Memoir provides flexible authentication options to suit user preferences, including quick demo access for evaluation." />
+          <SectionHead kicker="2.1 · Getting Started & Signing In" title="Choose how you want to arrive." intro="Momently provides flexible authentication options to suit user preferences, including quick demo access for evaluation." />
           <Card><ul className="divide-y divide-[var(--line)]">
             <Bullet title="Email & Password Login:" >Enter your registered email address and password on the Sign In screen, then tap Sign In.</Bullet>
             <Bullet title="Google Sign-In:" >Tap Continue with Google for one-tap OAuth authentication. First-time users are guided through a lightweight profile set-up (full name, birth date, occupation, and bio).</Bullet>
@@ -211,7 +211,7 @@ export default function App() {
             <Bullet title="Demo Reviewer Mode (No Verification Required):" >Tap Use Demo Account (or enter demo@memoir.app / Demo@1234) and tap Sign In to immediately explore pre-populated journal data without requiring email verification.</Bullet>
             <Bullet title="Password Recovery:" >If you forget your password, tap Forgot Password? on the sign-in screen to receive an automated reset link via email.</Bullet>
           </ul></Card>
-          <p className="mt-3 rounded-2xl border border-dashed border-[var(--line)] bg-[var(--paper-2)] px-4 py-3 text-sm leading-6 text-[var(--muted)]"><strong className="text-[var(--ink)]">Demo tip:</strong> Demo Reviewer Mode is the fastest way to evaluate Memoir — no verification step stands between you and the journal.</p>
+          <p className="mt-3 rounded-2xl border border-dashed border-[var(--line)] bg-[var(--paper-2)] px-4 py-3 text-sm leading-6 text-[var(--muted)]"><strong className="text-[var(--ink)]">Demo tip:</strong> Demo Reviewer Mode is the fastest way to evaluate Momently — no verification step stands between you and the journal.</p>
         </section>
 
         {/* 2.2 */}
@@ -281,7 +281,7 @@ export default function App() {
 
         {/* 2.6 */}
         <section id="profile" className="scroll-mt-28 pt-14">
-          <SectionHead kicker="2.6 · Profile, Preferences & Support" title="Make Memoir yours — and keep it safe." />
+          <SectionHead kicker="2.6 · Profile, Preferences & Support" title="Make Momently yours — and keep it safe." />
           <Card><ul className="divide-y divide-[var(--line)]">
             <Bullet title="Edit Profile:" >Update your avatar image, display name, birth date, primary occupation, and personal bio/motto.</Bullet>
             <Bullet title="Appearance:" >Seamlessly toggle between Light Mode and Dark Mode via the top navigation bar or under profile settings.</Bullet>
@@ -294,13 +294,13 @@ export default function App() {
         {/* PART 2 */}
         <div className="mt-16 overflow-hidden rounded-[26px] bg-[#5B21B6] px-6 py-8 text-center text-white sm:py-10">
           <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#DDD6FE]">Part 2</p>
-          <h2 className="font-serif-display mt-2 text-[clamp(1.9rem,5vw,2.8rem)] font-semibold leading-tight">How Memoir Works</h2>
+          <h2 className="font-serif-display mt-2 text-[clamp(1.9rem,5vw,2.8rem)] font-semibold leading-tight">How Momently Works</h2>
           <p className="mx-auto mt-2 max-w-[560px] text-sm leading-6 text-[#EDE9FE]">Technical architecture &amp; workflow — the quiet machinery behind the calm interface.</p>
         </div>
 
         {/* 3.1 */}
         <section id="frontend" className="scroll-mt-28 pt-14">
-          <SectionHead kicker="3.1 · Frontend Architecture (Flutter & Dart)" title="One codebase, three calm layers." intro="Memoir is built as a single-codebase cross-platform application using modern Flutter architectural patterns." />
+          <SectionHead kicker="3.1 · Frontend Architecture (Flutter & Dart)" title="One codebase, three calm layers." intro="Momently is built as a single-codebase cross-platform application using modern Flutter architectural patterns." />
           <div className="space-y-2">
             {[
               { label: "FLUTTER UI LAYER", items: ["Material Theming", "AnimatedBackgroundWidget", "Capsule Nav Bar"] },
@@ -324,7 +324,7 @@ export default function App() {
 
         {/* 3.2 */}
         <section id="backend" className="scroll-mt-28 pt-14">
-          <SectionHead kicker="3.2 · Backend & Cloud Storage (Firebase)" title="Isolated by design, synced everywhere." intro="Memoir uses Firebase backend infrastructure for data isolation and cross-device sync." />
+          <SectionHead kicker="3.2 · Backend & Cloud Storage (Firebase)" title="Isolated by design, synced everywhere." intro="Momently uses Firebase backend infrastructure for data isolation and cross-device sync." />
           <h3 className="font-serif-display mb-3 text-xl font-semibold">Cloud Firestore Data Structure</h3>
           <pre className="overflow-x-auto rounded-[18px] bg-[#181826] p-5 text-[13px] leading-6 text-[#F3EFE8]"><code>{FIRESTORE_TREE}</code></pre>
           <h3 className="font-serif-display mb-3 mt-8 text-xl font-semibold">Security &amp; Access Control</h3>
@@ -334,7 +334,7 @@ export default function App() {
 
         {/* 3.3 */}
         <section id="mood-engine" className="scroll-mt-28 pt-14">
-          <SectionHead kicker="3.3 · Mood-Reactive Styling Engine" title="Colour that follows feeling." intro="The core visual feature of Memoir is its mood-reactive dynamic engine. Every entry retains styling properties (layoutStyle, fontStyle, textColorKey, mood) inside Firestore, allowing disparate components to render identical typography and color accents." />
+          <SectionHead kicker="3.3 · Mood-Reactive Styling Engine" title="Colour that follows feeling." intro="The core visual feature of Momently is its mood-reactive dynamic engine. Every entry retains styling properties (layoutStyle, fontStyle, textColorKey, mood) inside Firestore, allowing disparate components to render identical typography and color accents." />
           <div className="table-wrap overflow-hidden rounded-[22px] border border-[var(--line)] bg-[var(--surface)] shadow-[var(--shadow)]">
             <table className="compact w-full border-collapse text-left text-sm">
               <thead><tr className="bg-[var(--paper-2)]"><th className="px-4 py-3 font-semibold">Parameter</th><th className="px-4 py-3 font-semibold">Handled Values</th><th className="px-4 py-3 font-semibold">Engine Resolution Mechanism</th></tr></thead>
@@ -350,7 +350,7 @@ export default function App() {
 
         {/* 3.4 */}
         <section id="images" className="scroll-mt-28 pt-14">
-          <SectionHead kicker="3.4 · Image Processing & Adaptive Collages" title="Small files, beautiful collages." intro="To optimize database read/write speeds and maintain rapid offline caching, Memoir utilizes an on-device image processing pipeline:" />
+          <SectionHead kicker="3.4 · Image Processing & Adaptive Collages" title="Small files, beautiful collages." intro="To optimize database read/write speeds and maintain rapid offline caching, Momently utilizes an on-device image processing pipeline:" />
           <div className="space-y-2">
             {["Gallery / Camera Image Selection", "Device Resize & Compression — Max 720×720 @ 60% quality for entries · Max 250×250 for user profile avatars", "Base64 Encoding & String Format", "Firestore Document Storage (< 1MB Limit)"].map((step, i, arr) => (
               <React.Fragment key={step}>
@@ -369,7 +369,7 @@ export default function App() {
 
         {/* 3.5 */}
         <section id="notifications" className="scroll-mt-28 pt-14">
-          <SectionHead kicker="3.5 · Local Notifications — Scheduled & Instant Notifications" title="Gentle nudges, right on time." intro="Memoir integrates flutter_local_notifications to manage scheduled reminders and milestone triggers locally on the user's device:" />
+          <SectionHead kicker="3.5 · Local Notifications — Scheduled & Instant Notifications" title="Gentle nudges, right on time." intro="Momently integrates flutter_local_notifications to manage scheduled reminders and milestone triggers locally on the user's device:" />
           <div className="table-wrap overflow-hidden rounded-[22px] border border-[var(--line)] bg-[var(--surface)] shadow-[var(--shadow)]">
             <table className="w-full border-collapse text-left text-sm">
               <thead><tr className="bg-[var(--paper-2)]"><th className="px-4 py-3 font-semibold">Notification Channel</th><th className="px-4 py-3 font-semibold">ID</th><th className="px-4 py-3 font-semibold">Trigger Schedule / Logic</th></tr></thead>
@@ -385,9 +385,9 @@ export default function App() {
         {/* Contact / Footer */}
         <footer id="contact" className="mt-16 scroll-mt-28 rounded-[26px] border border-[var(--line)] bg-[var(--surface)] px-6 py-8 text-center shadow-[var(--shadow)]">
           <span className="mx-auto grid h-11 w-11 place-items-center rounded-full bg-[#5B21B6] text-white"><Mail size={19} /></span>
-          <h2 className="font-serif-display mt-3 text-2xl font-semibold">Questions about Memoir?</h2>
+          <h2 className="font-serif-display mt-3 text-2xl font-semibold">Questions about Momently?</h2>
           <p className="mx-auto mt-2 max-w-[520px] text-sm leading-6 text-[var(--muted)]">Use the Help Center and feedback options inside the app to reach support, share a star rating, or review the Terms &amp; Privacy Policies.</p>
-          <p className="mt-6 border-t border-[var(--line)] pt-5 text-sm text-[var(--muted)]">© 2026 Memoir. Your words stay yours.</p>
+          <p className="mt-6 border-t border-[var(--line)] pt-5 text-sm text-[var(--muted)]">© 2026 Momently. Your words stay yours.</p>
         </footer>
       </main>
 
